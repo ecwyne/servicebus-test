@@ -4,3 +4,8 @@ pipeline:
     commands:
       - npm install
       - npm test
+  slack:
+    image: plugins/slack
+    webhook: https://hooks.slack.com/services/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
+    channel: drone
+    username: drone
