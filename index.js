@@ -1,11 +1,11 @@
 const bus = require('servicebus').bus({url: 'amqp://rabbitmq'});
 
-bus.listen('my.event', function (event) {
-  console.log(event);
+bus.listen('my.event', event => {
+	console.log(event);
 });
 
-setInterval(function () {
-  bus.send('my.event', { my: 'updated event' });
+setInterval(() => {
+	bus.send('my.event', { my: 'updated event' });
 }, 5000);
 
 

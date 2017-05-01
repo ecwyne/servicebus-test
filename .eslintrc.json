@@ -1,10 +1,4 @@
 {
-  "parser": "babel-eslint",
-
-
-  "plugins": [
-    "babel"
-  ],
 
   "env": {
     "es6": true,
@@ -39,7 +33,7 @@
   },
 
   "rules": {
-    "babel/arrow-parens": [2, "as-needed"],
+    "arrow-parens": [2, "as-needed"],
 
     "array-bracket-spacing": [0, "always"],
     "arrow-spacing": 2,
