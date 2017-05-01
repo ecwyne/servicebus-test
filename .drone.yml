@@ -1,4 +1,10 @@
 pipeline:
+  connect:
+    image: appleboy/drone-ssh
+    username: root
+    secrets: [deploy_host, deploy_password]
+    script:
+      - echo hello
   build:
     image: node:alpine
     commands:
