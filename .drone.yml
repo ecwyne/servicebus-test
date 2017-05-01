@@ -9,3 +9,10 @@ pipeline:
     channel: drone
     username: drone
     secrets: [slack_webhook]
+  dockerhub:
+    image: plugins/docker
+    username: ecwyne
+    email: ecwyne@gmail.com
+    repo: ecwyne/servicebus-test
+    tags: latest
+    secrets: [dockerhub_password]
