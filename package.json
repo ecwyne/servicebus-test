@@ -10,7 +10,7 @@
     "push": "docker push ecwyne/servicebus-test:latest"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "servicebus": "^2.0.10"
   }
