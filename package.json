@@ -7,11 +7,17 @@
     "test": "echo \"There are no test specified\" && exit 0",
     "start": "node index.js",
     "build": "docker build -t ecwyne/servicebus-test:latest .",
-    "push": "docker push ecwyne/servicebus-test:latest"
+    "push": "docker push ecwyne/servicebus-test:latest",
+    "lint": "eslint ."
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
     "servicebus": "^2.0.10"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "eslint-plugin-babel": "^4.1.1"
   }
 }
