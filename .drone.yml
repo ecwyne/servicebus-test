@@ -24,4 +24,5 @@ pipeline:
     script:
       - docker pull ecwyne/servicebus-test:latest
       - docker service update --image ecwyne/servicebus-test:latest servicebus-test
+      - sleep 5
       - docker container prune -f
