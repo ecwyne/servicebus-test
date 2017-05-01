@@ -2,8 +2,7 @@ pipeline:
   connect:
     image: appleboy/drone-ssh
     username: root
-    host: ${DEPLOY_HOST}
-    password: ${DEPLOY_PASSWORD}
+    secrets: [drone-ssh_host, drone-ssh_password]
     script:
       - echo hello
   build:
