@@ -15,4 +15,5 @@ pipeline:
     email: ecwyne@gmail.com
     repo: ecwyne/servicebus-test
     tags: latest
+    registry: hub.docker.com
     secrets: [dockerhub_password]
