@@ -16,4 +16,4 @@ pipeline:
     repo: ecwyne/servicebus-test
     tags: latest
     registry: hub.docker.com
-    secrets: [dockerhub_password]
+    secrets: [docker_password]
