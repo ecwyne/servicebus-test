@@ -1,10 +1,4 @@
 pipeline:
-  connect:
-    image: appleboy/drone-ssh
-    username: root
-    secrets: [ssh_host, ssh_password]
-    script:
-      - echo hello
   build:
     image: node:alpine
     commands:
@@ -30,3 +24,4 @@ pipeline:
     script:
       - docker pull ecwyne/servicebus-test:latest
       - docker service update --image ecwyne/servicebus-test:latest servicebus-test
+      - docker container prune -f
