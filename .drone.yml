@@ -17,3 +17,10 @@ pipeline:
     repo: ecwyne/servicebus-test
     tags: latest
     secrets: [docker_password]
+  deploy:
+    image: appleboy/drone-ssh
+    username: root
+    secrets: [deploy_host, deploy_password]
+    script:
+      - docker pull ecwyne/servicebus-test:latest
+      - docker service update --image ecwyne/servicebus-test:latest servicebus-test
