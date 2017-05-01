@@ -5,7 +5,7 @@ bus.listen('my.event', event => {
 });
 
 setInterval(() => {
-	bus.send('my.event', { my: 'automatically deployed event' });
+	bus.send('my.event', { my: 'automatically dev-branch deployed event' });
 }, 5000);
 
 
