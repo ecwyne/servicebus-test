@@ -5,7 +5,7 @@ bus.listen('my.event', event => {
 });
 
 setInterval(() => {
-	bus.send('my.event', { my: 'hey Kathleen' });
+	bus.send('my.event', { my: 'hey Kathleen!' });
 }, 5000);
 
 
